@@ -33,7 +33,7 @@ Each folder represents an independent Visual Studio solution containing hands-on
 
 ---
 
-## ⚡ Getting Started
+## Getting Started
 
 To run any of these projects locally on your machine, follow these steps:
 
