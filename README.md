@@ -18,21 +18,6 @@ Welcome to the **Desktop Programming** repository! This repository contains a st
 
 ---
 
-## 🗂️ Project Structure
-
-Each folder represents an independent Visual Studio solution containing hands-on practice programs and exercises:
-
-* 📁 **`P01-Pendahuluan/`**  
-  *Introduction to Visual Studio IDE, Windows Forms, Controls, and Event-Driven Programming.*
-* 📁 **`P02-Variabel & Operator/`**  
-  *Data Types, Variables, Constants, and fundamental Operators (Arithmetic, Relational, Logical, and Assignment).*
-* 📁 **`P03-Percabangan/`**  
-  *Control Flow & Conditional Logic using `If-Then-Else`, `Select Case`, and related practical assignments.*
-* 📁 **`P04-Perulangan/`**  
-  *Iteration algorithms utilizing `For-Next`, `Do-While`, `While-End` loops, and advanced nested looping exercises.*
-
----
-
 ## Getting Started
 
 To run any of these projects locally on your machine, follow these steps:
