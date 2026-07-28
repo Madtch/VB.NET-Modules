@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C2A6EA44-FD3F-4FBC-AB36-2D79F2DCF385}</ProjectGuid>
+    <ProjectGuid>{E0F304F7-91F5-4B65-92D3-40E71ED155A3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>P05_Array.My.MyApplication</StartupObject>
-    <RootNamespace>P05_Array</RootNamespace>
-    <AssemblyName>P05-Array</AssemblyName>
+    <StartupObject>P06_ProcedureFunction.My.MyApplication</StartupObject>
+    <RootNamespace>P06_ProcedureFunction</RootNamespace>
+    <AssemblyName>P06-ProcedureFunction</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>P05-Array.xml</DocumentationFile>
+    <DocumentationFile>P06-ProcedureFunction.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>P05-Array.xml</DocumentationFile>
+    <DocumentationFile>P06-ProcedureFunction.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -97,9 +97,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

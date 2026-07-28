@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C2A6EA44-FD3F-4FBC-AB36-2D79F2DCF385}</ProjectGuid>
+    <ProjectGuid>{7819104E-B58E-451F-9754-70F6F3A8E2E2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>P05_Array.My.MyApplication</StartupObject>
-    <RootNamespace>P05_Array</RootNamespace>
-    <AssemblyName>P05-Array</AssemblyName>
+    <StartupObject>P05_ArrayMultiDimensi.My.MyApplication</StartupObject>
+    <RootNamespace>P05_ArrayMultiDimensi</RootNamespace>
+    <AssemblyName>P05-ArrayMultiDimensi</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>P05-Array.xml</DocumentationFile>
+    <DocumentationFile>P05-ArrayMultiDimensi.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>P05-Array.xml</DocumentationFile>
+    <DocumentationFile>P05-ArrayMultiDimensi.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

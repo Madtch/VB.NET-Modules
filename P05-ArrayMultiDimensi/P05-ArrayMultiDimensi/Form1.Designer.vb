@@ -29,32 +29,33 @@ Partial Class Form1
         '
         'BtnTampil
         '
-        Me.BtnTampil.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BtnTampil.BackColor = System.Drawing.SystemColors.Highlight
         Me.BtnTampil.ForeColor = System.Drawing.Color.White
-        Me.BtnTampil.Location = New System.Drawing.Point(186, 59)
+        Me.BtnTampil.Location = New System.Drawing.Point(127, 45)
         Me.BtnTampil.Name = "BtnTampil"
-        Me.BtnTampil.Size = New System.Drawing.Size(156, 45)
+        Me.BtnTampil.Size = New System.Drawing.Size(172, 43)
         Me.BtnTampil.TabIndex = 0
-        Me.BtnTampil.Text = "Tampilkan Isi Array"
+        Me.BtnTampil.Text = "Tampilkan Isi Matriks"
         Me.BtnTampil.UseVisualStyleBackColor = False
         '
         'TxtOutput
         '
-        Me.TxtOutput.Location = New System.Drawing.Point(186, 125)
+        Me.TxtOutput.Location = New System.Drawing.Point(127, 115)
         Me.TxtOutput.Multiline = True
         Me.TxtOutput.Name = "TxtOutput"
         Me.TxtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TxtOutput.Size = New System.Drawing.Size(385, 234)
+        Me.TxtOutput.Size = New System.Drawing.Size(492, 253)
         Me.TxtOutput.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.BackColor = System.Drawing.Color.PapayaWhip
-        Me.Label1.Location = New System.Drawing.Point(182, 383)
+        Me.Label1.Location = New System.Drawing.Point(127, 390)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(377, 43)
+        Me.Label1.Size = New System.Drawing.Size(492, 51)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Array adalah sebuah variabel yang bisa menampung banyak nilai/data/elemen."
+        Me.Label1.Text = "Array multi dimensi diimplementasikan sebagai array yang terletak di dalam array " &
+    "(matriks)."
         '
         'Form1
         '
@@ -69,7 +70,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = ".: Array :."
+        Me.Text = ".: Array Multi Dimensi :"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
