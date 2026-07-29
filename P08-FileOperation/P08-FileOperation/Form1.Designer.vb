@@ -24,64 +24,81 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TxtPath = New System.Windows.Forms.TextBox()
+        Me.TxtEditor = New System.Windows.Forms.TextBox()
+        Me.BtnCreate = New System.Windows.Forms.Button()
+        Me.BtnRead = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(106, 82)
+        Me.Label1.Location = New System.Drawing.Point(97, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 20)
+        Me.Label1.Size = New System.Drawing.Size(46, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Path:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(106, 305)
+        Me.Label2.Location = New System.Drawing.Point(97, 146)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 20)
+        Me.Label2.Size = New System.Drawing.Size(55, 20)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Label1"
+        Me.Label2.Text = "Editor:"
         '
-        'TextBox1
+        'TxtPath
         '
-        Me.TextBox1.Location = New System.Drawing.Point(101, 136)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(233, 26)
-        Me.TextBox1.TabIndex = 1
+        Me.TxtPath.Location = New System.Drawing.Point(101, 46)
+        Me.TxtPath.Name = "TxtPath"
+        Me.TxtPath.Size = New System.Drawing.Size(461, 26)
+        Me.TxtPath.TabIndex = 1
         '
-        'TextBox2
+        'TxtEditor
         '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 360)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(233, 26)
-        Me.TextBox2.TabIndex = 1
+        Me.TxtEditor.Location = New System.Drawing.Point(101, 182)
+        Me.TxtEditor.Multiline = True
+        Me.TxtEditor.Name = "TxtEditor"
+        Me.TxtEditor.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TxtEditor.Size = New System.Drawing.Size(461, 376)
+        Me.TxtEditor.TabIndex = 1
         '
-        'Button1
+        'BtnCreate
         '
-        Me.Button1.Location = New System.Drawing.Point(101, 219)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(116, 31)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnCreate.Location = New System.Drawing.Point(101, 78)
+        Me.BtnCreate.Name = "BtnCreate"
+        Me.BtnCreate.Size = New System.Drawing.Size(225, 45)
+        Me.BtnCreate.TabIndex = 2
+        Me.BtnCreate.Text = "Create / write file"
+        Me.BtnCreate.UseVisualStyleBackColor = True
+        '
+        'BtnRead
+        '
+        Me.BtnRead.Location = New System.Drawing.Point(332, 78)
+        Me.BtnRead.Name = "BtnRead"
+        Me.BtnRead.Size = New System.Drawing.Size(230, 45)
+        Me.BtnRead.TabIndex = 2
+        Me.BtnRead.Text = "Read file"
+        Me.BtnRead.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(656, 586)
+        Me.Controls.Add(Me.BtnRead)
+        Me.Controls.Add(Me.BtnCreate)
+        Me.Controls.Add(Me.TxtEditor)
+        Me.Controls.Add(Me.TxtPath)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = ".: File Operation :."
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -89,7 +106,8 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents TxtPath As TextBox
+    Friend WithEvents TxtEditor As TextBox
+    Friend WithEvents BtnCreate As Button
+    Friend WithEvents BtnRead As Button
 End Class
