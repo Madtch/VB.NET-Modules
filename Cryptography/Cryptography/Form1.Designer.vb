@@ -24,22 +24,29 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CboKategori = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CboKunci = New System.Windows.Forms.ComboBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TxtCipher = New System.Windows.Forms.TextBox()
+        Me.TxtPlain = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.BtnEnkripsi = New System.Windows.Forms.Button()
+        Me.BtnBersih = New System.Windows.Forms.Button()
+        Me.BtnDeksripsi = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TxtKategori = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LblJam = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.CboKategori)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -48,8 +55,17 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Kategori"
         '
+        'CboKategori
+        '
+        Me.CboKategori.FormattingEnabled = True
+        Me.CboKategori.Location = New System.Drawing.Point(72, 62)
+        Me.CboKategori.Name = "CboKategori"
+        Me.CboKategori.Size = New System.Drawing.Size(177, 28)
+        Me.CboKategori.TabIndex = 0
+        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.CboKunci)
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
         Me.GroupBox2.Location = New System.Drawing.Point(12, 256)
         Me.GroupBox2.Name = "GroupBox2"
@@ -58,10 +74,18 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Kunci"
         '
+        'CboKunci
+        '
+        Me.CboKunci.FormattingEnabled = True
+        Me.CboKunci.Location = New System.Drawing.Point(72, 60)
+        Me.CboKunci.Name = "CboKunci"
+        Me.CboKunci.Size = New System.Drawing.Size(177, 28)
+        Me.CboKunci.TabIndex = 0
+        '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
-        Me.GroupBox3.Controls.Add(Me.TxtKategori)
+        Me.GroupBox3.Controls.Add(Me.TxtCipher)
+        Me.GroupBox3.Controls.Add(Me.TxtPlain)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
@@ -72,25 +96,25 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Masukkan Kalimat"
         '
-        'GroupBox4
+        'TxtCipher
         '
-        Me.GroupBox4.ForeColor = System.Drawing.Color.White
-        Me.GroupBox4.Location = New System.Drawing.Point(384, 494)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(740, 141)
-        Me.GroupBox4.TabIndex = 0
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Proses"
+        Me.TxtCipher.Location = New System.Drawing.Point(151, 244)
+        Me.TxtCipher.Multiline = True
+        Me.TxtCipher.Name = "TxtCipher"
+        Me.TxtCipher.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TxtCipher.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TxtCipher.Size = New System.Drawing.Size(565, 154)
+        Me.TxtCipher.TabIndex = 0
         '
-        'Label1
+        'TxtPlain
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(39, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(91, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Plainteks"
+        Me.TxtPlain.Location = New System.Drawing.Point(152, 66)
+        Me.TxtPlain.Multiline = True
+        Me.TxtPlain.Name = "TxtPlain"
+        Me.TxtPlain.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TxtPlain.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TxtPlain.Size = New System.Drawing.Size(565, 154)
+        Me.TxtPlain.TabIndex = 0
         '
         'Label2
         '
@@ -102,33 +126,76 @@ Partial Class Form1
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Cipherteks"
         '
-        'TxtKategori
+        'Label1
         '
-        Me.TxtKategori.Location = New System.Drawing.Point(152, 66)
-        Me.TxtKategori.Multiline = True
-        Me.TxtKategori.Name = "TxtKategori"
-        Me.TxtKategori.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TxtKategori.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TxtKategori.Size = New System.Drawing.Size(565, 154)
-        Me.TxtKategori.TabIndex = 0
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(39, 65)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 25)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Plainteks"
         '
-        'TextBox1
+        'GroupBox4
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 244)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBox1.Size = New System.Drawing.Size(565, 154)
-        Me.TextBox1.TabIndex = 0
+        Me.GroupBox4.Controls.Add(Me.BtnEnkripsi)
+        Me.GroupBox4.Controls.Add(Me.BtnBersih)
+        Me.GroupBox4.Controls.Add(Me.BtnDeksripsi)
+        Me.GroupBox4.ForeColor = System.Drawing.Color.White
+        Me.GroupBox4.Location = New System.Drawing.Point(384, 494)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(740, 141)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Proses"
         '
-        'ComboBox1
+        'BtnEnkripsi
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(72, 62)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
-        Me.ComboBox1.TabIndex = 0
+        Me.BtnEnkripsi.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnEnkripsi.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BtnEnkripsi.ForeColor = System.Drawing.Color.White
+        Me.BtnEnkripsi.Location = New System.Drawing.Point(96, 44)
+        Me.BtnEnkripsi.Name = "BtnEnkripsi"
+        Me.BtnEnkripsi.Size = New System.Drawing.Size(166, 60)
+        Me.BtnEnkripsi.TabIndex = 0
+        Me.BtnEnkripsi.Text = "Enkripsi"
+        Me.BtnEnkripsi.UseVisualStyleBackColor = False
+        '
+        'BtnBersih
+        '
+        Me.BtnBersih.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnBersih.BackColor = System.Drawing.Color.Crimson
+        Me.BtnBersih.ForeColor = System.Drawing.Color.White
+        Me.BtnBersih.Location = New System.Drawing.Point(440, 44)
+        Me.BtnBersih.Name = "BtnBersih"
+        Me.BtnBersih.Size = New System.Drawing.Size(166, 60)
+        Me.BtnBersih.TabIndex = 0
+        Me.BtnBersih.Text = "Bersih"
+        Me.BtnBersih.UseVisualStyleBackColor = False
+        '
+        'BtnDeksripsi
+        '
+        Me.BtnDeksripsi.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BtnDeksripsi.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BtnDeksripsi.ForeColor = System.Drawing.Color.White
+        Me.BtnDeksripsi.Location = New System.Drawing.Point(268, 44)
+        Me.BtnDeksripsi.Name = "BtnDeksripsi"
+        Me.BtnDeksripsi.Size = New System.Drawing.Size(166, 60)
+        Me.BtnDeksripsi.TabIndex = 0
+        Me.BtnDeksripsi.Text = "Deksripsi"
+        Me.BtnDeksripsi.UseVisualStyleBackColor = False
+        '
+        'Timer1
+        '
+        '
+        'LblJam
+        '
+        Me.LblJam.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblJam.Location = New System.Drawing.Point(113, 551)
+        Me.LblJam.Name = "LblJam"
+        Me.LblJam.Size = New System.Drawing.Size(108, 39)
+        Me.LblJam.TabIndex = 1
+        Me.LblJam.Text = "Label 3"
         '
         'Form1
         '
@@ -136,6 +203,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
         Me.ClientSize = New System.Drawing.Size(1139, 656)
+        Me.Controls.Add(Me.LblJam)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
@@ -144,8 +212,10 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -157,7 +227,12 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents TxtKategori As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TxtPlain As TextBox
+    Friend WithEvents TxtCipher As TextBox
+    Friend WithEvents CboKategori As ComboBox
+    Friend WithEvents CboKunci As ComboBox
+    Friend WithEvents BtnDeksripsi As Button
+    Friend WithEvents BtnEnkripsi As Button
+    Friend WithEvents BtnBersih As Button
+    Friend WithEvents LblJam As Label
 End Class
