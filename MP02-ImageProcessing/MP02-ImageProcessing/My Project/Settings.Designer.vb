@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
 
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.Digital_Image_Processing.My.MySettings
+        Friend ReadOnly Property Settings() As Global.MP02_ImageProcessing.My.MySettings
             Get
-                Return Global.Digital_Image_Processing.My.MySettings.Default
+                Return Global.MP02_ImageProcessing.My.MySettings.Default
             End Get
         End Property
     End Module

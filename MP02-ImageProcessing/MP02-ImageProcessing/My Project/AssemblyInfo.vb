@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Cryptography")>
+<Assembly: AssemblyTitle("MP02-ImageProcessing")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Cryptography")>
+<Assembly: AssemblyProduct("MP02-ImageProcessing")>
 <Assembly: AssemblyCopyright("Copyright ©  2026")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("c8a7c196-96b1-4f16-8079-b65fe8941e1e")>
+<Assembly: Guid("882932e3-6ef1-4545-adb2-56967e683455")>
 
 ' Version information for an assembly consists of the following four values:
 '

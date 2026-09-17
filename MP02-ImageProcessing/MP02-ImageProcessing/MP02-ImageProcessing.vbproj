@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F25BADE7-3DB1-47E6-8EAD-362A30B26509}</ProjectGuid>
+    <ProjectGuid>{FD27CDC0-5AFA-4430-BB46-9D800B6EFFF2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Cryptography.My.MyApplication</StartupObject>
-    <RootNamespace>Cryptography</RootNamespace>
-    <AssemblyName>Cryptography</AssemblyName>
+    <StartupObject>MP02_ImageProcessing.My.MyApplication</StartupObject>
+    <RootNamespace>MP02_ImageProcessing</RootNamespace>
+    <AssemblyName>MP02-ImageProcessing</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Cryptography.xml</DocumentationFile>
+    <DocumentationFile>MP02-ImageProcessing.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Cryptography.xml</DocumentationFile>
+    <DocumentationFile>MP02-ImageProcessing.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

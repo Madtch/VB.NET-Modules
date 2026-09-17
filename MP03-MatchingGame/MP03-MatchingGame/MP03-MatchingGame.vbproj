@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{10F6EDFD-412A-48C5-8CEF-872AA664E298}</ProjectGuid>
+    <ProjectGuid>{E44A9674-CBC2-4158-AF46-A67E0E29E055}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Digital_Image_Processing.My.MyApplication</StartupObject>
-    <RootNamespace>Digital_Image_Processing</RootNamespace>
-    <AssemblyName>Digital-Image-Processing</AssemblyName>
+    <StartupObject>MP03_MatchingGame.My.MyApplication</StartupObject>
+    <RootNamespace>MP03_MatchingGame</RootNamespace>
+    <AssemblyName>MP03-MatchingGame</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Digital-Image-Processing.xml</DocumentationFile>
+    <DocumentationFile>MP03-MatchingGame.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Digital-Image-Processing.xml</DocumentationFile>
+    <DocumentationFile>MP03-MatchingGame.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

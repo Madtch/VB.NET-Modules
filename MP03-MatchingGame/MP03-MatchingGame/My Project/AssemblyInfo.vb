@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Digital-Image-Processing")>
+<Assembly: AssemblyTitle("MP03-MatchingGame")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Digital-Image-Processing")>
+<Assembly: AssemblyProduct("MP03-MatchingGame")>
 <Assembly: AssemblyCopyright("Copyright ©  2026")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("4532a170-03f2-458d-95f9-27580116f11c")>
+<Assembly: Guid("eb71db5c-3458-4b98-aa42-a8dba4ccf7da")>
 
 ' Version information for an assembly consists of the following four values:
 '
